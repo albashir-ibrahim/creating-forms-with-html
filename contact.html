@@ -38,7 +38,12 @@
         </aside>
         <main id="main">
            <h1>Contact Us</h1>
-           
+           <form action="contact.html" method="GET" enctype="application/x-www-form-urlencoded">
+            Your Name: <input type="text" name="costumerName"><br />
+            <input type="hidden" name="source" value="ContactForm">
+            Your Feedback: <br> <textarea name="feedback" id="" cols="40" rows="3"></textarea><br />
+            <input type="submit" value="sendContact">
+        </form>
         </main>
 
         <footer>
