@@ -41,16 +41,28 @@
            <form action="contact.html" method="GET" enctype="application/x-www-form-urlencoded">
             Your Name: <input type="text" name="costumerName"><br />
             Your Email: <input type="email" name="costumerEmail"><br />
-            Your Phone: <input type="tel" name="costumerPhone"><br />
+            Your Phone: <input type="tel" name="costumerPhone">
+            <input type="radio" name="phoneType" value="cell"> Cell
+            <input type="radio" name="phoneType" value="work"> work
+            <input type="radio" name="phoneType" value="home"> home
+            <br />
+            ok Contact Me:
+            <input type="checkbox" name="okToContact" value="Phone"> By Phone
+            <input type="checkbox" name="okToContact" value="Email"> By Email
+            <br />
+
             <input type="hidden" name="source" value="ContactForm">
 
             Your Feedback: <br> <textarea name="feedback" id="" cols="40" rows="3"></textarea><br />
 
-            Feedback type: <select name="FeedbackType" id=""></select>
+            Feedback type: <select name="FeedbackType" multiple="multiple" size="6">
+                <optgroup label="Store">
             <option value="webstore">Web Store</option>
             <option value="store">Physical Store</option>
+        </optgroup>
             <option value="webtech">Website Issue</option>
             <option value="general">General Feedback</option>
+        </select><br />
 
             Severity: <input type="range" min="1" max="10" name="SeverityRange"><br />
             Severity: <input type="number" min="1" max="10" name="Severity"><br />
