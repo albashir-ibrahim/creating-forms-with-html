@@ -40,8 +40,25 @@
            <h1>Contact Us</h1>
            <form action="contact.html" method="GET" enctype="application/x-www-form-urlencoded">
             Your Name: <input type="text" name="costumerName"><br />
+            Your Email: <input type="email" name="costumerEmail"><br />
+            Your Phone: <input type="tel" name="costumerPhone"><br />
             <input type="hidden" name="source" value="ContactForm">
+
             Your Feedback: <br> <textarea name="feedback" id="" cols="40" rows="3"></textarea><br />
+
+            Feedback type: <select name="FeedbackType" id=""></select>
+            <option value="webstore">Web Store</option>
+            <option value="store">Physical Store</option>
+            <option value="webtech">Website Issue</option>
+            <option value="general">General Feedback</option>
+
+            Severity: <input type="range" min="1" max="10" name="SeverityRange"><br />
+            Severity: <input type="number" min="1" max="10" name="Severity"><br />
+            Issue Date: <input type="date" name="IssueDate"><br />
+            Issue Time: <input type="time" name="IssueTime"><br />
+
+
+
             <input type="submit" value="sendContact">
         </form>
         </main>
