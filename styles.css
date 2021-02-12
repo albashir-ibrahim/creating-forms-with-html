@@ -84,3 +84,16 @@ header,
         textarea {
           border-radius: 7px;
         }
+        input:valid {
+          border-color: #008000;
+        }
+        input:invalid {
+          border-color: #ff0000;
+        }
+        input:focus:invalid {
+          border-color: #000000;
+        }
+        input:required,
+        textarea:required {
+          border-style: dashed;
+        }
